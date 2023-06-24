@@ -6,10 +6,10 @@
   --color5: white;
   --color6: rgb(236, 236, 236);
 
-  --xlg: 10rem;
-  --lg: 5rem;
-  --med: 2.5rem;
-  --sm: 1.5rem;
+  --xlg: 8rem;
+  --lg: 3rem;
+  --med: 1.5rem;
+  --sm: 0.5rem;
   --font1: 'Teko', sans-serif;
   --font2: 'Lilita One', sans-serif;
   --font3: 'Plus Jakarta Sans', sans-serif;
@@ -17,13 +17,11 @@
   --mobile: 768px;
 }
 
-
 body {
   background-color: var(--color5);
   font-family: var(--font1);
   margin: 0;
 }
-
 
 .center-text {
   text-align: center;
@@ -43,34 +41,29 @@ h2 {
   line-height: var(--lg);
 }
 
-
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: var(--color3);
   color: var(--color2);
-  font-size: var(--med);
+  
 }
 
 .logo-container {
   background-image: url('https://drive.google.com/uc?export=view&id=1ZImW-OSC2emLeJqd_cG8DKWZdTRCmxgP');
   background-repeat: no-repeat;
-  background-size: 5.5rem;
+  background-size: 4rem;
   background-position: center;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
-nav {
-  display: flex;
-}
 
 nav a {
-  margin: 0 1rem;
   color: var(--color2);
   text-decoration: none;
   transition: .3s ease-in-out;
+  margin-right: 1rem;
+  font-size: var(--med);
+  font-family: var(--font1);
 }
 
 nav a:hover {
@@ -78,6 +71,9 @@ nav a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
+
+/* ------------------------------------- */
 
 main {
   height: 100vh
@@ -111,7 +107,6 @@ h1 .red {
 }
 
 .learn-more {
-  margin-top: 4rem;
   background-color: var(--color4);
   color: var(--color5);
   font-family: var(--font3);
@@ -377,6 +372,7 @@ input, textarea {
   padding: .5rem;
   margin-top: .3rem;
   font-family: sans-serif;
+  color: var(--color6)
 }
 
 .contact-me button {
@@ -404,18 +400,38 @@ input, textarea {
   .about {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
+  .logo-container {
+    background-image: url('https://drive.google.com/uc?export=view&id=1ZImW-OSC2emLeJqd_cG8DKWZdTRCmxgP');
+    background-repeat: no-repeat;
+    background-size: 2.5rem;
+    background-position: center;
+    width: 2rem;
+    height: 2rem;
+  }
   .review-card-container, .pricing-plans  {
     display: unset;
   }
 
-.pricing {
-  margin: 0 1rem;
-}
+  .pricing {
+    margin: 0 1rem;
+  }
+
   .review-card {
     padding: 0;
   }
 
+  .divider {
+    display: none;
+  }
  
+  .ruff-tastic {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  
 }
