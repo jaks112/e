@@ -6,10 +6,11 @@
   --color5: white;
   --color6: rgb(236, 236, 236);
 
-  --xlg: 8rem;
-  --lg: 3rem;
-  --med: 1.5rem;
-  --sm: 0.5rem;
+  --xlg: 10rem;
+  --lg: 5rem;
+  --med: 2.5rem;
+  --sm: 1.5rem;
+  --xs: 1rem;
   --font1: 'Teko', sans-serif;
   --font2: 'Lilita One', sans-serif;
   --font3: 'Plus Jakarta Sans', sans-serif;
@@ -41,6 +42,8 @@ h2 {
   line-height: var(--lg);
 }
 
+/* Header */
+
 header {
   background-color: var(--color3);
   color: var(--color2);
@@ -56,6 +59,11 @@ header {
   height: 4rem;
 }
 
+nav {
+  display: flex;
+  gap: var(--xs);
+  padding-right: var(--xs);
+}
 
 nav a {
   color: var(--color2);
@@ -73,22 +81,17 @@ nav a:hover {
 }
 
 
-/* ------------------------------------- */
-
-main {
-  height: 100vh
-}
+/* Home */
 
 .home {
-  height: 30%;
-  background-size: 100vw;
+  background-size: 100%;
   background-image: url('https://drive.google.com/uc?export=view&id=1MAoY085kopUipdGwr22bOHNsQAz6CSfK');
   background-repeat: no-repeat;
   background-position: center
 }
 
 .home .text {
-  padding-top: 3rem;
+  padding: 3rem 0;
   color: var(--color5);
 }
 
@@ -102,7 +105,7 @@ h1 .red {
 
 .home p {
   font-size: var(--med);
-  padding: 0;
+  padding: var(--xs) 0;
   font-family: var(--font2);
 }
 
@@ -125,17 +128,19 @@ h1 .red {
   border: 1.5px solid white;
 }
 
+/* About */
+
 .about { 
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin: 2rem;
 }
 
 .about .img-container {
   background-image: url('https://drive.google.com/uc?export=view&id=1odn7yKEEMny4yiIwVojf3pgrnuWsZPEt');
-  border-radius: 1rem;
+  border-radius: var(--xs);
   background-size: 25rem;
-  margin-top: 1rem;
+  margin-top: var(--xs);
   height: 22rem;
   width: 22rem;
   background-repeat: no-repeat;
@@ -154,7 +159,8 @@ h1 .red {
 .about-message {
   display: flex;
   flex-direction: column;
-  margin: 0 1rem 0 2rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
 }
 
 .hello-friends {
@@ -170,24 +176,26 @@ h1 .red {
 .about p {
   font-size: 1.3rem;
   margin: .25rem 0 ;
-  width: 35rem;
+  max-width: 25rem;
 }
 
 .fa-paw {
-  margin-left: 1rem;
+  margin-left: var(--xs);
   font-size: 3rem;
   color: var(--color4);
   transform: rotate(25deg);
 }
 
+/* Reviews */
+
 .ruff-tastic-reviews {
   padding: 2rem 0;
   background-color:#fff0d3;
 }
+
 .ruff-tastic-reviews h2 {
   color: black;
 }
-
 
 .review-card-container {
   display: grid;
@@ -198,40 +206,38 @@ h1 .red {
   gap: 2rem;
 }
 
-
 .review-card {
   background-color: var(--color5)  ;
   height: 30rem;
   min-width: 20rem;
-  margin: 0 .5rem 2rem 1rem;
-  border-radius: 1rem;
+  margin: 0 .5rem 2rem var(--xs);
+  border-radius: var(--xs);
 }
 
 .review-img {
   width: 20rem ;
   height: auto;
-  border-radius: 1rem 1rem 0 0 ;
+  border-radius: var(--xs) var(--xs) 0 0 ;
   box-shadow: 0 5px 10px 1px grey;
 }
 
 .name {
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: var(--xs);
   font-family: 'Outfit', sans-serif;
   letter-spacing: 2px;
 }
 
 .review-statement {
-  font-size: 1rem;
-  margin: 2rem 1rem;
+  font-size: var(--xs);
+  margin: 2rem var(--xs);
 }
 
 .fa-star {
   color: #ffdd00;
 }
 
-/*------------------------- */
-/*------------------------- */
+/* Pricing */
 
 .pricing {
   padding: 2rem 0;
@@ -246,7 +252,7 @@ h1 .red {
 }
 
 .pricing-plans {
-  margin: 2rem 1rem;
+  margin: 2rem var(--xs);
   gap: 2rem;
   justify-content: center;
   display: grid;
@@ -257,7 +263,7 @@ h1 .red {
   padding: 3rem;
   box-shadow: 0 -0 10px 2px grey;
   height: 25rem;
-  border-radius: 1rem;
+  border-radius: var(--xs);
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -265,7 +271,7 @@ h1 .red {
 
 .basic-container {
   box-shadow: 0 -0 10px 2px grey;
-  border-radius: 1rem;
+  border-radius: var(--xs);
   background-color: black;
   margin: 0;
 }
@@ -278,7 +284,7 @@ h1 .red {
   letter-spacing: 3px;
   color: black;
   background-color: white;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: var(--xs) var(--xs) 0 0;
   box-shadow: 0 0 15px 5px grey;
 }
 
@@ -342,9 +348,10 @@ label {
   display: flex;
   flex-direction: column;
   font-family: var(--font3);
-  margin: 1rem 0;
+  margin: var(--xs) 0;
 }
 
+/* Contact Me */
 .contact-me {
   padding: 10% 20%;
   background-color: rgb(48, 45, 45);
@@ -362,7 +369,6 @@ h2 .contact {
   color: white;
   padding: 4rem;
 }
-
 
 input, textarea {
   border-radius: .5rem;
@@ -394,12 +400,13 @@ input, textarea {
   --xlg: 3rem;
   --lg: 2.5rem;
   --med: 1.5rem;
-  --sm: .5rem;
+  --sm: var(--xs);
   }
 
   .about {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
@@ -414,9 +421,16 @@ input, textarea {
   .review-card-container, .pricing-plans  {
     display: unset;
   }
+  .divider, .ruff-tastic {
+    display: none;
+  }
 
   .pricing {
-    margin: 0 1rem;
+    margin: 0 var(--xs);
+  }
+
+  .about-message {
+    padding-left: 0;
   }
 
   .review-card {
