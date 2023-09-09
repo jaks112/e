@@ -14,8 +14,6 @@
   --font1: 'Teko', sans-serif;
   --font2: 'Lilita One', sans-serif;
   --font3: 'Plus Jakarta Sans', sans-serif;
-
-  --mobile: 768px;
 }
 
 body {
@@ -79,7 +77,6 @@ nav a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-
 
 /* Home */
 
@@ -146,7 +143,6 @@ h1 .red {
   background-repeat: no-repeat;
   background-position: 20% 20%;
 }
-
 
 .divider {
   height: 25rem;
@@ -262,7 +258,6 @@ h1 .red {
 .lite, .plus {
   padding: 3rem;
   box-shadow: 0 -0 10px 2px grey;
-  height: 25rem;
   border-radius: var(--xs);
   margin-top: 2rem;
   display: flex;
@@ -291,7 +286,6 @@ h1 .red {
 .basic {
   margin-top: .75rem;
   padding: 2rem 3rem;
-  height: 23rem;
   color: var(--color5);
   display: flex;
   flex-direction: column;
@@ -362,12 +356,11 @@ h2 .contact {
 }
 
 .contact-me h2 {
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 .contact-me-text {
   color: white;
-  padding: 4rem;
 }
 
 input, textarea {
@@ -394,13 +387,16 @@ input, textarea {
   font-weight: bold;
 }
 
-
 @media (max-width: 1023px) {
   :root {
   --xlg: 3rem;
   --lg: 2.5rem;
   --med: 1.5rem;
   --sm: var(--xs);
+  }
+
+  .book {
+    margin-top: 4rem;
   }
 
   .about {
@@ -436,16 +432,19 @@ input, textarea {
   .review-card {
     padding: 0;
   }
-
-  .divider {
-    display: none;
-  }
- 
-  .ruff-tastic {
-    display: none;
-  }
 }
 
-@media (max-width: 768px) {
-  
+@media (max-width: 425px) {
+
+  .logo-container {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  h1 {
+    color: var(--color2)
+  }
 }
