@@ -1,4 +1,5 @@
 :root {
+  /* colors */
   --color1: #a13304;
   --color2: #cb5f00;
   --color3: #ffac04;
@@ -6,6 +7,7 @@
   --color5: white;
   --color6: rgb(236, 236, 236);
 
+  /* sizes */
   --size-3xs: 0.1rem;
   --size-2xs: 0.125rem;
   --size-xs: 0.3rem;
@@ -16,7 +18,7 @@
   --size-2xl: 3rem;
   --size-3xl: 5rem;
 
-
+  /* fonts */
   --font1: 'Teko', sans-serif;
   --font2: 'Lilita One', sans-serif;
   --font3: 'Plus Jakarta Sans', sans-serif;
@@ -177,7 +179,6 @@ h1 .red {
   color: var(--color2);
 }
 
-
 .about p {
   font-size: 1.3rem;
   margin: 0.25rem 0 ;
@@ -210,11 +211,11 @@ h1 .red {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   overflow: scroll;
   overflow-y: hidden;
-  overscroll-behavior: contain;
+  width: 100%;
 }
 
 .review-card {
-  background-color: var(--color5)  ;
+  background-color: var(--color5);
   height: 30rem;
   width: 20rem;
   border-radius: var(--size-md);
@@ -384,7 +385,7 @@ input, textarea {
 .contact-me button {
   border: none;
   background-color: var(--color3);
-  color: white;
+  color: var(--color5);
   border-radius:  var(--size-sm);
   padding: 0.75rem 0;
   margin-top: var(--size-3xl);
@@ -422,23 +423,21 @@ input, textarea {
     align-items: center;
   }
 
-  .review-card-container {
-    overflow: hidden;
-  }
-
   .review-card-container, .pricing-plans  {
     grid-template-columns: 1fr;
   }
+
+  .review-card-container {
+    overflow-x: hidden;
+    width: unset;
+  }
+
   .divider, .ruff-tastic {
     display: none;
   }
 
   .about-message {
     padding-left: 0;
-  }
-
-  .review-card {
-    padding: 0;
   }
 }
 

@@ -1,7 +1,6 @@
 # Responsive Landing Page - Dog Walking Service
 ![Dog Walking Service Landing Page](preview.jpeg)
 
-
 This project is a responsive landing page for a mock dog walking service. It was created to practice HTML, CSS, and DOM manipulation in JavaScript.
 
 ## Overview
@@ -19,10 +18,6 @@ This project is a responsive landing page for a mock dog walking service. It was
 ## Usage
 
 To view the landing page, simply open the `index.html` file in your preferred web browser. You can also deploy it to a web hosting service to make it accessible online.
-
-## Contributions
-
-Contributions and improvements to this project are welcome. Feel free to fork this repository, make changes, and submit a pull request.
 
 ## Acknowledgments
 
