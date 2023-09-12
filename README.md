@@ -3,7 +3,7 @@
 
 This project is a responsive landing page for a mock dog walking service. It was created to practice HTML, CSS, and DOM manipulation in JavaScript.
 
-## Overview
+## Features
 
 - **Navigation Bar:** The website features a navigation bar with links to different sections of the page, including Home, About, Reviews, Pricing, and Contact.
 
