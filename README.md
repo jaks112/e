@@ -24,9 +24,8 @@ To view the landing page, simply open the `index.html` file in your preferred we
 
 This project was created as a learning exercise to develop HTML, CSS, and JavaScript skills.
 
-## Contact Information
+## Contact Me
 
-If you have any questions or feedback about this project, feel free to reach out to me:
-
-**Chaley Boatmon**
-  Email: chaleyboatmon@gmail.com
+- **Chaley Boatmon**
+- **Email:** chaleyboatmon@gmail.com
+- **Questions or Comments:** If you have any questions, comments, or suggestions, please feel free to reach out to me. I'd love to hear from you!
