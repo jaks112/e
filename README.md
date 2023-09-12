@@ -9,16 +9,16 @@ This project is a responsive landing page for a mock dog walking service. It was
 
 - **Interactive Buttons:** Although the buttons labeled "Learn More," "Book," and "Send" are provided, they are currently non-functional and serve as design elements.
 
+## Getting Started
+
+### Usage
+To view the landing page, simply open the `index.html` file in your preferred web browser. You can also deploy it to a web hosting service to make it accessible online.
+
 ## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
-
-## Getting Started
-
-### Usage
-To view the landing page, simply open the `index.html` file in your preferred web browser. You can also deploy it to a web hosting service to make it accessible online.
 
 ## Acknowledgments
 
