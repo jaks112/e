@@ -41,7 +41,7 @@ const reviews = [
     'P.',
     4,
     'https://people.com/thmb/oni3ZYC5MJBRdc_dI65sgjnex0s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/dog-hug-2f174202e9cf4b36bc6c81b196a6d7bd.jpg',
-    "Chaley's warm and friendly personality makes Dug feel comfortable and loved, and I can always trust that he is in good hands with her."
+    "Chaley's warm personality makes Dug feel loved. I can always trust that he is in good hands with her."
   ),
 
   new ReviewCreator(
